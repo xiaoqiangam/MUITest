@@ -1,0 +1,110 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/20160821204647.png",
+      "js/index.js",
+      "js/update.js",
+      "js/mui.js",
+      "css/mui.css",
+      "html/home.html",
+      "html/message.html"
+    ],
+    "refer": [
+      "index-menu.html",
+      "html/setting.html",
+      "html/message.html",
+      "html/home.html"
+    ]
+  },
+  "index-menu.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "index1.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "images/20160821204647.png",
+      "css/mui.min.css",
+      "js/mui.js",
+      "js/index.js"
+    ],
+    "refer": [
+      "index-menu.html"
+    ]
+  },
+  "html/setting.html": {
+    "resources": [
+      "html/js/mui.view.js",
+      "html/js/feedback.js",
+      "html/css/feedback.css",
+      "html/img/logo.png",
+      "js/mui.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "html/home.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "html/message.html",
+      "html/button.html"
+    ]
+  },
+  "html/message.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "js/mui.lazyload.js",
+      "js/mui.lazyload.img.js"
+    ],
+    "refer": [
+      "html/music.html"
+    ]
+  },
+  "html/button.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "html/music.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "login.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/style.css",
+      "js/mui.enterfocus.js",
+      "images/sinaweibo.png",
+      "images/weixin.png",
+      "images/qq.png"
+    ],
+    "refer": [
+      "index.html",
+      "forget_password.html",
+      "reg.html"
+    ]
+  }
+}

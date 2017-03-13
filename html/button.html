@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">首页button</h1>
+		</header>
+		<div class="mui-content">
+			<!--任意位置对应控件上添加.mui-action-back类-->
+		    <button type="button" class='mui-btn mui-btn-danger mui-action-back'>关闭此页面</button>
+		</div>
+		
+		
+		
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				//页面右滑关闭功能
+				swipeBack: true,
+				beforeback: function() {
+					var old_back = mui.back;
+					mui.back = function(){
+					  	var btn = ["确定","取消"];
+					  	mui.confirm('确认关闭当前窗口？','Hello MUI',btn,function(e){
+					    if(e.index==0){
+					        //执行mui封装好的窗口关闭逻辑；
+					        old_back();
+					    }
+					  	});
+					}
+//					confirm("是否关闭当前？")
+					
+				}
+			})
+		</script>
+	</body>
+
+</html>

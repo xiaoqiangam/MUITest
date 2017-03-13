@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="mui-content" id="message">
+		    home
+		    <input type="button" name="" id="message" value="buttom" />
+		    
+		</div>
+		
+		
+		
+		
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			document.getElementsByTagName('input')[0].addEventListener('tap',function(){
+//				alert('5');
+				mui.openWindow({
+					url: 'button.html',
+//					id: 'message',
+//					styles:{
+//						top:0,
+//						bottom:0
+//					},
+					show:{
+						/*若为 autoshow：false，则需要在B页面window.onload 后执行
+						window.onload = function(){
+						  //从服务器获取数据
+						  ....
+						  //业务数据获取完毕，并已插入当前页面DOM；
+						  //注意：若为ajax请求，则需将如下代码放在处理完ajax响应数据之后；
+						  mui.plusReady(function(){
+						    //关闭等待框
+						    plus.nativeUI.closeWaiting();
+						    //显示当前页面
+						    mui.currentWebview.show();
+						  });
+						}*/
+						autoShow:true,
+						aniShow:'slide-in-right',
+						duration:100,
+					}
+				})
+				
+			})
+			/*var xhr = new XMLHttpRequest();
+			xhr.open('get','http://zhaomenghuan.github.io/api/blog.json',true);
+			xhr.onload = function() {
+				console.log(this.responseText);
+				var data = JSON.parse(this.responseText);
+				for(var i in data){
+					document.write(data[i].pageID + ": "+data[i].title+"<br/>")
+				}
+			};
+			xhr.onerror = function() {
+				alert('error making the request.')
+			};
+			xhr.send();*/
+		
+		</script>
+	</body>
+
+</html>
