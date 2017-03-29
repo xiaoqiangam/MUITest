@@ -106,12 +106,15 @@
 		},
 		"NativeObj": {
 			"description": "原生对象"
-		},"OAuth":{},"Share":{}
+		},
+		"OAuth": {},
+		"Share": {}
 	},
 	"plus": {
 		"splashscreen": {
-			"autoclose": false,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
-			"waiting": true
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true,
+			"delay": "0"
 		},
 		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
 		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
@@ -223,230 +226,230 @@
 					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
 					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
 					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
-					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
-					"xxhdpi": ""
+					"xhdpi": ""
 				}
-			}
+			},
+			"debug": true
 		}
 	},
 	"dependencies": {
-	  "pages": {
-	    "index.html": {
-	      "resources": [
-	        "js/mui.min.js",
-	        "fonts/mui.ttf",
-	        "css/mui.min.css",
-	        "images/20160821204647.png",
-	        "js/index.js",
-	        "js/update.js",
-	        "js/mui.js",
-	        "css/mui.css",
-	        "html/home.html",
-	        "html/message.html"
-	      ],
-	      "refer": [
-	        "index-menu.html",
-	        "html/setting.html",
-	        "html/home.html",
-	        "html/message.html"
-	      ],
-	      "priority": 0
-	    },
-	    "index-menu.html": {
-	      "resources": [
-	        "js/mui.min.js",
-	        "fonts/mui.ttf",
-	        "css/mui.min.css"
-	      ],
-	      "refer": [],
-	      "priority": 0
-	    },
-	    "index1.html": {
-	      "resources": [
-	        "fonts/mui.ttf",
-	        "images/20160821204647.png",
-	        "css/mui.min.css",
-	        "js/mui.js",
-	        "js/index.js"
-	      ],
-	      "refer": [
-	        "index-menu.html"
-	      ],
-	      "priority": 0
-	    },
-	    "html/setting.html": {
-	      "resources": [
-	        "html/js/mui.view.js",
-	        "html/js/feedback.js",
-	        "html/css/feedback.css",
-	        "html/img/logo.png",
-	        "js/mui.js",
-	        "js/mui.min.js",
-	        "css/mui.min.css",
-	        "fonts/mui.ttf"
-	      ],
-	      "refer": [],
-	      "priority": 0
-	    },
-	    "html/home.html": {
-	      "resources": [
-	        "js/mui.min.js",
-	        "css/mui.min.css",
-	        "fonts/mui.ttf"
-	      ],
-	      "refer": [
-	        "html/message.html",
-	        "html/button.html"
-	      ],
-	      "priority": 0
-	    },
-	    "html/message.html": {
-	      "resources": [
-	        "js/mui.min.js",
-	        "css/mui.min.css",
-	        "fonts/mui.ttf",
-	        "js/mui.lazyload.js",
-	        "js/mui.lazyload.img.js"
-	      ],
-	      "refer": [
-	        "html/music.html"
-	      ],
-	      "priority": 0
-	    },
-	    "html/button.html": {
-	      "resources": [
-	        "fonts/mui.ttf",
-	        "js/mui.min.js",
-	        "css/mui.min.css"
-	      ],
-	      "refer": [],
-	      "priority": 0
-	    },
-	    "html/music.html": {
-	      "resources": [
-	        "js/mui.min.js",
-	        "css/mui.min.css",
-	        "fonts/mui.ttf"
-	      ],
-	      "refer": [],
-	      "priority": 0
-	    },
-	    "login.html": {
-	      "resources": [
-	        "js/app.js",
-	        "js/mui.min.js",
-	        "css/mui.min.css",
-	        "css/style.css",
-	        "js/mui.enterfocus.js",
-	        "images/sinaweibo.png",
-	        "images/weixin.png",
-	        "images/qq.png",
-	        "fonts/mui.ttf"
-	      ],
-	      "refer": [
-	        "index.html",
-	        "forget_password.html",
-	        "reg.html",
-	        "unlock.html"
-	      ],
-	      "priority": 0
-	    },
-	    "forget_password.html": {
-	      "href": "forget_password.html",
-	      "resources": [
-	        "css/mui.min.css",
-	        "fonts/mui.ttf",
-	        "css/style.css",
-	        "js/mui.min.js",
-	        "js/app.js"
-	      ],
-	      "priority": 0
-	    },
-	    "unlock.html": {
-	      "href": "unlock.html",
-	      "resources": [
-	        "css/mui.min.css",
-	        "fonts/mui.ttf",
-	        "js/mui.min.js",
-	        "js/mui.locker.js",
-	        "js/app.js"
-	      ],
-	      "refer": [
-	        "login.html"
-	      ],
-	      "priority": 2
-	    },
-	    "reg.html": {
-	      "href": "reg.html",
-	      "resources": [
-	        "css/mui.min.css",
-	        "fonts/mui.ttf",
-	        "css/style.css",
-	        "js/mui.min.js",
-	        "js/app.js"
-	      ],
-	      "priority": 3
-	    }
-	  },
-	  "idle": {
-	    "resources": [
-	      "js/mui.imageViewer.js",
-	      "js/mui.picker.min.js",
-	      "js/mui.dtpicker.js",
-	      "js/ad.js",
-	      "images/iconfont-tianjia.png",
-	      "html/setting1.html",
-	      "js/mui.zoom.js",
-	      "js/mui.poppicker.js",
-	      "js/mui.listpicker.js",
-	      "js/webviewGroup.js",
-	      "data/wangyiyun.json",
-	      "images/qihoo.png",
-	      "js/mui.previewimage.js",
-	      "js/city.data.js",
-	      "js/mui.indexedlist.js",
-	      "js/mui.view.js",
-	      "README.md",
-	      "js/beecloud.js",
-	      "js/mui.pullToRefresh.js",
-	      "js/mui.picker.js",
-	      "js/mui.pullToRefresh.material.js",
-	      "js/mui.picker.all.js",
-	      "js/city.data-3.js",
-	      "js/95516.js",
-	      "js/feedback.js",
-	      "images/user-photo.png",
-	      "js/arttmpl.js"
-	    ]
-	  }
+		"pages": {
+			"index.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"images/20160821204647.png",
+					"js/index.js",
+					"js/update.js",
+					"js/mui.js",
+					"css/mui.css",
+					"html/home.html",
+					"html/message.html"
+				],
+				"refer": [
+					"index-menu.html",
+					"html/setting.html",
+					"html/home.html",
+					"html/message.html"
+				],
+				"priority": 0
+			},
+			"index-menu.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index1.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"images/20160821204647.png",
+					"css/mui.min.css",
+					"js/mui.js",
+					"js/index.js"
+				],
+				"refer": [
+					"index-menu.html"
+				],
+				"priority": 0
+			},
+			"html/setting.html": {
+				"resources": [
+					"html/js/mui.view.js",
+					"html/js/feedback.js",
+					"html/css/feedback.css",
+					"html/img/logo.png",
+					"js/mui.js",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/home.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf"
+				],
+				"refer": [
+					"html/message.html",
+					"html/button.html"
+				],
+				"priority": 0
+			},
+			"html/message.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mui.lazyload.js",
+					"js/mui.lazyload.img.js"
+				],
+				"refer": [
+					"html/music.html"
+				],
+				"priority": 0
+			},
+			"html/button.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/music.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"login.html": {
+				"resources": [
+					"js/app.js",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/mui.enterfocus.js",
+					"images/sinaweibo.png",
+					"images/weixin.png",
+					"images/qq.png",
+					"fonts/mui.ttf"
+				],
+				"refer": [
+					"index.html",
+					"forget_password.html",
+					"reg.html",
+					"unlock.html"
+				],
+				"priority": 0
+			},
+			"forget_password.html": {
+				"href": "forget_password.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"js/app.js"
+				],
+				"priority": 0
+			},
+			"unlock.html": {
+				"href": "unlock.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"js/mui.locker.js",
+					"js/app.js"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 2
+			},
+			"reg.html": {
+				"href": "reg.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"js/app.js"
+				],
+				"priority": 3
+			}
+		},
+		"idle": {
+			"resources": [
+				"js/mui.imageViewer.js",
+				"js/mui.picker.min.js",
+				"js/mui.dtpicker.js",
+				"js/ad.js",
+				"images/iconfont-tianjia.png",
+				"html/setting1.html",
+				"js/mui.zoom.js",
+				"js/mui.poppicker.js",
+				"js/mui.listpicker.js",
+				"js/webviewGroup.js",
+				"data/wangyiyun.json",
+				"images/qihoo.png",
+				"js/mui.previewimage.js",
+				"js/city.data.js",
+				"js/mui.indexedlist.js",
+				"js/mui.view.js",
+				"README.md",
+				"js/beecloud.js",
+				"js/mui.pullToRefresh.js",
+				"js/mui.picker.js",
+				"js/mui.pullToRefresh.material.js",
+				"js/mui.picker.all.js",
+				"js/city.data-3.js",
+				"js/95516.js",
+				"js/feedback.js",
+				"images/user-photo.png",
+				"js/arttmpl.js"
+			]
+		}
 	},
-	"unpackage":[
-	  "data/wangyiyun.json",
-	  "html/setting1.html",
-	  "images/iconfont-tianjia.png",
-	  "images/qihoo.png",
-	  "images/user-photo.png",
-	  "js/95516.js",
-	  "js/ad.js",
-	  "js/arttmpl.js",
-	  "js/beecloud.js",
-	  "js/city.data-3.js",
-	  "js/city.data.js",
-	  "js/feedback.js",
-	  "js/mui.dtpicker.js",
-	  "js/mui.imageViewer.js",
-	  "js/mui.indexedlist.js",
-	  "js/mui.listpicker.js",
-	  "js/mui.picker.all.js",
-	  "js/mui.picker.js",
-	  "js/mui.picker.min.js",
-	  "js/mui.poppicker.js",
-	  "js/mui.previewimage.js",
-	  "js/mui.pullToRefresh.js",
-	  "js/mui.pullToRefresh.material.js",
-	  "js/mui.view.js",
-	  "js/mui.zoom.js",
-	  "js/webviewGroup.js",
-	  "README.md"
+	"unpackage": [
+		"data/wangyiyun.json",
+		"html/setting1.html",
+		"images/iconfont-tianjia.png",
+		"images/qihoo.png",
+		"images/user-photo.png",
+		"js/95516.js",
+		"js/ad.js",
+		"js/arttmpl.js",
+		"js/beecloud.js",
+		"js/city.data-3.js",
+		"js/city.data.js",
+		"js/feedback.js",
+		"js/mui.dtpicker.js",
+		"js/mui.imageViewer.js",
+		"js/mui.indexedlist.js",
+		"js/mui.listpicker.js",
+		"js/mui.picker.all.js",
+		"js/mui.picker.js",
+		"js/mui.picker.min.js",
+		"js/mui.poppicker.js",
+		"js/mui.previewimage.js",
+		"js/mui.pullToRefresh.js",
+		"js/mui.pullToRefresh.material.js",
+		"js/mui.view.js",
+		"js/mui.zoom.js",
+		"js/webviewGroup.js",
+		"README.md"
 	]
 }

@@ -1,1 +1,51 @@
-null
+{
+	"index.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"html/home.html",
+			"js/mui.js",
+			"css/mui.css"
+		],
+		"refer": [
+			"html/setting.html",
+			"html/message.html",
+			"html/home.html"
+		]
+	},
+	"html/button.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		]
+	},
+	"html/setting.html": {
+		"resources": [
+			"html/js/mui.view.js",
+			"html/js/feedback.js",
+			"html/css/feedback.css"
+		]
+	},
+	"login.html": {
+		"resources": [
+			"js/app.js",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.enterfocus.js",
+			"images/sinaweibo.png",
+			"images/weixin.png",
+			"images/qq.png"
+		],
+		"refer": [
+			"index.html",
+			"reg.html"
+		]
+	},
+	"html/message.html": {
+		"resources": [
+			"js/mui.lazyload.js",
+			"js/mui.lazyload.img.js"
+		]
+	}
+}
